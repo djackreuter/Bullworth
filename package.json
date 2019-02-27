@@ -5,9 +5,16 @@
   "repository": "git@github.com:djackreuter/Bullworth.git",
   "author": "Dylan Reuter <djreuter45@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "mongoose": "^5.4.16"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
   }
 }
