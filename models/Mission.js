@@ -7,6 +7,6 @@ const MissionSchema = new mongoose.Schema({
   }
 });
 
-const Mission = new mongoose.Model('Mission', MissionSchema);
+const Mission = mongoose.model('Mission', MissionSchema);
 
 module.exports = { Mission }

@@ -2,10 +2,10 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
-const cliques = require('routes/api/cliques');
-const missions = require('routes/api/missions');
-const classes = require('routes/api/classes');
-const locations = require('routes/api/locations');
+const cliques = require('./routes/api/cliques');
+const missions = require('./routes/api/missions');
+const classes = require('./routes/api/classes');
+const locations = require('./routes/api/locations');
 
 const db = require('./config/keys').MONGODB_URI;
 const app = express();
