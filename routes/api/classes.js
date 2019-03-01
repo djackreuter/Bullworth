@@ -43,7 +43,7 @@ router.get('/:id', async (req, res) => {
  * @desc create a new classe
  * @access public
  */
-router.post('/', async (req, res) => {
+router.post('/', (req, res) => {
   try {
     const { name } = req.body;
     if (isEmpty(name)) {
@@ -98,7 +98,7 @@ router.delete('/:id', async (req, res) => {
       return res.status(404).json({ error: "Class not found" });
     }
     // dont actually delete, just return as if it did
-    return res.status(200);
+    return res.json({ success: true });
   } catch (err) {
     return res.status(400).json(err);
   }
